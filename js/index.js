@@ -9,7 +9,7 @@ console.log("Bài 1: " ,SumArr);
 //b2
 var maxInNumbers = Math.max.apply(Math, NumArr); 
 var minInNumbers = Math.min.apply(Math, NumArr);
-var MediumNumbers = Math.floor( NumArr.reduce((a,b)=> a+b)/NumArr.length);
+var MediumNumbers =  NumArr.reduce((a,b)=> a+b)/NumArr.length;
 
 console.log(" Bài 2a: " ,maxInNumbers);
 console.log(" Bài 2b: " ,minInNumbers);
