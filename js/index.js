@@ -2,16 +2,16 @@
 var NumArr = [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1];
 
 var SumArr = NumArr.reduce((SumN,value) => SumN + value);
-console.log("Bài 1: " ,SumArr);
+console.log("Bài 21: " ,SumArr);
 
 //b22
 var maxInNumbers = Math.max.apply(Math, NumArr); 
 var minInNumbers = Math.min.apply(Math, NumArr);
 var MediumNumbers =  NumArr.reduce((a,b)=> a+b)/NumArr.length;
 
-console.log(" Bài 2a: " ,maxInNumbers);
-console.log(" Bài 2b: " ,minInNumbers);
-console.log(" Bài 2c: " ,MediumNumbers);
+console.log(" Bài 22a: " ,maxInNumbers);
+console.log(" Bài 22b: " ,minInNumbers);
+console.log(" Bài 22c: " ,MediumNumbers);
 
 //b23
 var array=NumArr.sort();
@@ -31,7 +31,7 @@ for(var i=0; i<array.length-1;i++){
         }
     }
 }
-console.log("Bài 3:",CoUnt);
+console.log("Bài 23:",CoUnt);
 
 //b24    
 var ArrB4 =  [1,2,3,2,3,4,6,7] ;
@@ -47,14 +47,15 @@ var SumNT= arrFilter.filter((iteam)=>{
         return ArrRE;
     }
  });
- console.log(" Bài 4: " ,SumNT);
+ console.log(" Bài 24: " ,SumNT);
 
  //b25
  var ArrB5= [1,2,3,2,3,4,6,7];
  var SBPM= ArrB5.map(iteam=>Math.pow(iteam,2));
- console.log(" Bài 5: " ,SBPM);
+ console.log(" Bài 25: " ,SBPM);
 
  //b26
+ console.log(" Bài 26: " ,SBPM);
  var a = [1,3,4,7,9,11,3];
     var k = 8;
     var larger = []; //những số lớn hơn b;
@@ -106,7 +107,7 @@ var SumNT= arrFilter.filter((iteam)=>{
                     lastName: student.lastName.toLowerCase().split(" ").map(item => item[0].toUpperCase() + item.slice(1)).join(" ")
                 }});
 
-    console.log("Bài 7",results);
+    console.log("Bài 27",results);
 //b28
     var students = [
         {
@@ -132,7 +133,7 @@ var SumNT= arrFilter.filter((iteam)=>{
     ]
 
     var results = students.filter(student => student.lastName.split(" ")[0] === "Shit");
-    console.log("Bài 8",results);
+    console.log("Bài 28",results);
 
 // b29
 var students = [
@@ -170,7 +171,7 @@ var sortByName = students.slice(0)
             } else {
                 return 0;
             }});
-console.log("Bài9",sortByName);
+console.log("Bài 29",sortByName);
 
 //b30
 var numbers = [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1]
@@ -186,7 +187,7 @@ var numbers = [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1]
     if (result === -Infinity) {
         console.log(-1)
     } else {
-        console.log("Bài 10: ",result)
+        console.log("Bài 30: ",result)
     }
 // b31
 var array = [9,1,8,3,4,15,19]
@@ -205,5 +206,5 @@ for (var a = 0; a < array.length; a++) {
 if (result != "yes") {
     console.log("no")
 } else {
-    console.log("Bài 11: ",result)
+    console.log("Bài 31: ",result)
 }
