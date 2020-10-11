@@ -1,10 +1,10 @@
-//b1
+//b21
 var NumArr = [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1];
 
 var SumArr = NumArr.reduce((SumN,value) => SumN + value);
 console.log("Bài 1: " ,SumArr);
 
-//b2
+//b22
 var maxInNumbers = Math.max.apply(Math, NumArr); 
 var minInNumbers = Math.min.apply(Math, NumArr);
 var MediumNumbers =  NumArr.reduce((a,b)=> a+b)/NumArr.length;
@@ -13,7 +13,7 @@ console.log(" Bài 2a: " ,maxInNumbers);
 console.log(" Bài 2b: " ,minInNumbers);
 console.log(" Bài 2c: " ,MediumNumbers);
 
-//b3
+//b23
 var array=NumArr.sort();
 var CoUnt=0;
 var ShoW=1;
@@ -33,7 +33,7 @@ for(var i=0; i<array.length-1;i++){
 }
 console.log("Bài 3:",CoUnt);
 
-//b4    
+//b24    
 var ArrB4 =  [1,2,3,2,3,4,6,7] ;
 var arrFilter = ArrB4.filter((item, index) => ArrB4.indexOf(item) === index);
 var SumNT= arrFilter.filter((iteam)=>{
@@ -49,14 +49,14 @@ var SumNT= arrFilter.filter((iteam)=>{
  });
  console.log(" Bài 4: " ,SumNT);
 
- //b5
+ //b25
  var ArrB5= [1,2,3,2,3,4,6,7];
  var SBPM= ArrB5.map(iteam=>Math.pow(iteam,2));
  console.log(" Bài 5: " ,SBPM);
 
- //b6
+ //b26
  var a = [1,3,4,7,9,11,3];
-    var k = Number(prompt("nhập K: "));
+    var k = 8;
     var larger = []; //những số lớn hơn b;
     var smaller = []; //những số nhỏ hơn b;
     var result = [];
@@ -79,7 +79,7 @@ var SumNT= arrFilter.filter((iteam)=>{
     }
 
 
-    //b7
+    //b27
     var students = [
         {
             id: "T3HXX1",
@@ -107,7 +107,7 @@ var SumNT= arrFilter.filter((iteam)=>{
                 }});
 
     console.log("Bài 7",results);
-//b8
+//b28
     var students = [
         {
             id: "T3HXX1",
@@ -134,7 +134,7 @@ var SumNT= arrFilter.filter((iteam)=>{
     var results = students.filter(student => student.lastName.split(" ")[0] === "Shit");
     console.log("Bài 8",results);
 
-// b9
+// b29
 var students = [
     {
         id: "T3HXX1",
@@ -172,7 +172,7 @@ var sortByName = students.slice(0)
             }});
 console.log("Bài9",sortByName);
 
-//b10
+//b30
 var numbers = [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1]
     // var numbers =[1,1,1,1,1,1,]
     var resultarr = []
@@ -188,7 +188,7 @@ var numbers = [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1]
     } else {
         console.log("Bài 10: ",result)
     }
-// b11
+// b31
 var array = [9,1,8,3,4,15,19]
 var z = 18
 for (var a = 0; a < array.length; a++) {
