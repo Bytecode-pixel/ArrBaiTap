@@ -98,7 +98,7 @@ var SumNT= arrFilter.filter((iteam)=>{
             lastName: "aS a Kite" 
         }];
 
-    var results = students.filter(student => student.firstName.length >= 3)
+    var results27 = students.filter(student => student.firstName.length >= 3)
         .map(
             student => {
                 return {
@@ -107,7 +107,7 @@ var SumNT= arrFilter.filter((iteam)=>{
                     lastName: student.lastName.toLowerCase().split(" ").map(item => item[0].toUpperCase() + item.slice(1)).join(" ")
                 }});
 
-    console.log("Bài 27",results);
+    console.log("Bài 27",results27);
 //b28
     var students = [
         {
@@ -132,8 +132,8 @@ var SumNT= arrFilter.filter((iteam)=>{
         }
     ]
 
-    var results = students.filter(student => student.lastName.split(" ")[0] === "Shit");
-    console.log("Bài 28",results);
+    var results28 = students.filter(student => student.lastName.split(" ")[0] === "Shit");
+    console.log("Bài 28",results28);
 
 // b29
 var students = [
@@ -183,27 +183,28 @@ var numbers = [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1]
             resultarr.push(numbers[i])
         }
     }
-    var result = Math.max(...resultarr)
-    if (result === -Infinity) {
+    var result30 = Math.max(...resultarr)
+    if (result30 === -Infinity) {
         console.log(-1)
     } else {
-        console.log("Bài 30: ",result)
+        console.log("Bài 30: ",result30)
     }
 // b31
 var array = [9,1,8,3,4,15,19]
 var z = 18
+var Check31="";
 for (var a = 0; a < array.length; a++) {
     for (var b = a + 1; b < array.length; b++) {
         for (var c = b + 1; c < array.length; c++) {
             if (z == array[a] + array[b] + array[c]) {
-                var result = "yes";
+                 Check31 = "yes";
                 break;
             }
         }
     }
 }
 
-if (result != "yes") {
+if (Check31 != "yes") {
     console.log("no")
 } else {
     console.log("Bài 31: ",result)
