@@ -56,17 +56,17 @@ var SumNT= arrFilter.filter((iteam)=>{
 
  //b6
  var a = [1,3,4,7,9,11,3];
-    var b = Number(prompt("input a number: "));
+    var k = Number(prompt("nhập K: "));
     var larger = []; //những số lớn hơn b;
     var smaller = []; //những số nhỏ hơn b;
     var result = [];
     for (var i = 0; i < a.length; i++) {
-        if (b > a[i]) {
+        if (k > a[i]) {
             smaller.push(a[i]);
-        } else if (b < a[i]) {
+        } else if (k < a[i]) {
             larger.push(a[i]);
-        } else if ( b = a[i]) {
-            console.log(b + " có xuất hiện trong chuỗi tại index: " + i);
+        } else if ( k = a[i]) {
+            console.log(k + " có xuất hiện trong chuỗi tại index: " + i);
         }
     }
     if (smaller.length == 0) {
