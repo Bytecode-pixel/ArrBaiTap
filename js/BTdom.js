@@ -4,14 +4,17 @@ var secodInput=document.querySelector("div#cal input.js-second-input");
 var resultInput=document.querySelector("div#cal input.js-input-result");
 var operatorSelect=document.querySelector("div#cal select.js-operator");
 var resultButton=document.querySelector("div#cal button.js-btn-result");
-console.log(firstInput,secodInput,resultInput,operatorSelect,resultInput);
+//console.log(firstInput,secodInput,resultInput,operatorSelect,resultInput);
 // event
 resultButton.addEventListener("click",function(){
     // alert("button click");
     var result=calculate();
     updateResult(result);
 });
-
+secodInput.addEventListener("change",function(){
+    var result=calculate();
+    updateResult(result);
+})
 
 // logic
 function calculate(){
